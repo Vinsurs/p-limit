@@ -1,0 +1,43 @@
+{
+  "name": "@vinsurs/p-limit",
+  "description": "An opinionated promise-limited lib",
+  "private": false,
+  "author": {
+    "name": "vinsurs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Vinsurs/p-limit.git"
+  },
+  "homepage": "https://github.com/Vinsurs/p-limit",
+  "keywords": ["p-limit", "promise", "throttle", "limit"],
+  "files": ["dist"],
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/p-limit.umd.cjs",
+  "module": "./dist/p-limit.js",
+  "exports": {
+    ".": {
+      "import": "./dist/p-limit.js",
+      "require": "./dist/p-limit.umd.cjs"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/node": "^18.13.0",
+    "tslib": "^2.5.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
