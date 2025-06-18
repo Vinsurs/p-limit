@@ -12,14 +12,15 @@
   "homepage": "https://github.com/Vinsurs/p-limit",
   "keywords": ["p-limit", "promise", "throttle", "limit"],
   "files": ["dist"],
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "main": "./dist/p-limit.umd.cjs",
   "module": "./dist/p-limit.js",
   "exports": {
     ".": {
       "import": "./dist/p-limit.js",
-      "require": "./dist/p-limit.umd.cjs"
+      "require": "./dist/p-limit.umd.cjs",
+      "types": "./dist/index.d.ts"
     }
   },
   "types": "./dist/index.d.ts",
